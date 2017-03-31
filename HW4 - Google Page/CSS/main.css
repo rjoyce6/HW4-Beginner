@@ -1,0 +1,279 @@
+
+/*========================================================
+          Sitewide Styles
+==========================================================*/
+
+/*multiple selector*/
+* {
+  color: black;
+}
+
+/*Body Section*/
+body {
+  background-color: white;
+  /*change text color*/
+  color: #222;
+  margin: 0;
+}
+
+/*Lists*/
+li {
+  /*remove bullet points*/
+  list-style: none;
+}
+
+/*Anchor*/
+a {
+  /*change text color*/
+  color: #222;
+  /*text-decoration used to remove underlines from links*/
+  text-decoration: none;
+}
+
+/*underline a link when the user mouses over it*/
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*========================================================
+          Top Section - Navigation
+========================================================*/
+/*Top navigation*/
+.top-nav {
+  /* move elements to the far right*/
+  float: right;
+  /*move the top navigation section to the left by 25px*/
+  margin-right: 25px;
+
+}
+
+/*top navigation section list*/
+.top-nav li{
+  /*make block-level elements to behave like an inline element*/
+  display: inline-block;
+  text-align: right;
+  padding: 5px 10px 0 0;
+  vertical-align: bottom;
+  margin: 5px 5px 0 0;
+  font-size: 13px;
+}
+
+/*style icons*/
+.fa {
+  font-size: 20px;
+  vertical-align: top;
+  opacity: 0.7;
+}
+
+/*Change opacity of icons when hover over*/
+.fa:hover {
+  opacity: 1.0;
+}
+
+/*change background and text style of share button*/
+.button {
+  background-color: #f2f2f2;
+  border: none;
+  color: #222;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px 15px;
+  /*position relative to its default position on the page*/
+  position: relative;
+  /*Set top edge to 3px above*/
+  top: -3px;
+}
+
+/*Change color when hover over share button*/
+.button:hover {
+  background-color: #e1e1e1;
+}
+
+/*Profile photo*/
+.profilephoto {
+  width: 32px;
+  height: 32px;
+  /*change border*/
+  border-radius: 25px;
+  position: relative;
+  /*Set top edge to 5px below*/
+  top: 5px;
+}
+
+
+/*=======================================================
+          Middle Section - Search Box
+==========================================================*/
+
+.search-section {
+  margin: 0 auto;
+  width: 80%;
+  height: 780px;
+}
+
+.search-section img {
+  padding: 142px 0 24px 0;
+  /*display an element as a block element*/
+  display: block;
+  /*move image to the center */
+  margin: 0 auto;
+}
+
+/*change inpunt field*/
+.search-section input {
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  /*change border*/
+  border: 1px solid lightgray;
+}
+
+/*center elements of class search-button*/
+.search-button {
+  text-align: center;
+}
+
+/*change search-button buttons*/
+.search-button button {
+  line-height: 27px;
+  display: inline-block;
+  /*change button margins*/
+  margin: 17px 6px;
+  /*minimum height */
+  background-color: #f5f5f5;
+  padding: 0 12px;
+  color: #666;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+
+/*================================================
+            Footer Section
+================================================*/
+.bottom-links {
+  /*position: absolute;
+  /*set the bottom edge of the absolute position */
+  /*bottom: 0;*/
+  width: 100%;
+  background-color: #f2f2f2;
+  border-top: 1px solid lightgray;
+}
+
+/*Set margin to zero for all bottom section links*/
+.bottom-links-left, .bottom-links-right {
+  margin: 0;
+}
+
+.bottom-links-left {
+  float: left;
+  padding-left: 20px;
+}
+
+.bottom-links-right {
+  float: right;
+  padding-right: 10px;
+}
+
+.bottom-links-left li, .bottom-links-right li{
+  /*minimum height for the boxes*/
+  line-height: 40px;
+  display: inline;
+}
+
+/*select and style every anchor element that is the first child of its parent*/
+.bottom-links-right li a:first-child {
+  padding-right: 8px;
+}
+
+/*Selects and styles the second and the third child of its parent*/
+.bottom-links-left li:nth-child(2) , .bottom-links-left li:nth-child(3){
+  margin-left: 7px;
+}
+
+/*Edit links*/
+.bottom-links-left li a, .bottom-links-right li a {
+  color: #666;
+  margin: 2px 10px 0;
+  letter-spacing: 0.1px;
+  font-size: 14px;
+}
+
+
+/*================================================
+            Meta Viewport Tag
+================================================*/
+@media(max-width: 300px)
+{
+  .search-section input {
+    font-size: 80%;
+  }
+
+}
+
+@media(max-width: 620px) {
+  .top-nav li {
+    margin-right: 0;
+  }
+
+  .top-nav a, .top-nav i{
+    font-size: 80%;
+  }
+
+  .top-nav img {
+    display: none;
+  }
+
+  .top-nav span {
+    font-size: 80%;
+    padding: 7% 15%;
+  }
+
+  .search-section {
+    height: 600px;
+  }
+
+  .search-section img {
+    width: 70%;
+    padding-bottom: 2px;
+  }
+
+  .search-section input {
+    width: 80%;
+    font-size: 80%;
+  }
+
+  .search-button button {
+    font-size: 80%;
+    line-height: 18px;
+    font-weight: normal;
+    padding: 0 2%;
+  }
+
+  .bottom-links-left {
+    padding-left: 1%;
+  }
+
+  .bottom-links-right {
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+
+  .bottom-links-left li a, .bottom-links-right li a {
+    font-size: 70%;
+    margin: 2px 1% 0;
+  }
+
+  .bottom-links-right li a:first-child {
+    padding-right: 0;
+  }
+
+}

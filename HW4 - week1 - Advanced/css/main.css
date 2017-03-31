@@ -1,0 +1,414 @@
+/*========================================================
+          Sitewide Styles
+==========================================================*/
+
+/*multiple selector*/
+* {
+  color: #000;
+  font-family: 'Lato',sans-serif;
+}
+
+/*Body Section*/
+body {
+  margin: 0;
+  background-color: #f6f9f9;
+}
+
+p {
+  font-size: 15px;
+}
+
+/*========================================================
+          Top Section - Navigation
+========================================================*/
+/*Top navigation*/
+.logo {
+  margin: 25px 100px;
+}
+
+/*========================================================
+               Main Information Section
+========================================================*/
+/*Main Information */
+.maininfo {
+  text-align: center;
+  background: url(../img/bg1.png) no-repeat center center;
+  height: 800px;
+}
+
+/*Main information section page - name*/
+.maininfo h1 {
+  color: #fff;
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 47px;
+  margin-bottom: 60px;
+  margin-top: 0;
+  padding-top: 225px;
+}
+
+/*elemnt used to separate content*/
+hr {
+  display: block;
+  align: center;
+  width: 50%;
+  border-color: #15a4fa;
+}
+
+/*Main information section page - description*/
+h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 47px;
+}
+
+/*change action box background, text color, and position*/
+.actionbox button {
+  padding: 10px;
+  color: #fff;
+  background-color: transparent;
+  border-top:  1px solid #15a4fa;
+  border-right: transparent;
+  border-bottom: transparent;
+  border-left:  1px solid #15a4fa;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/*change arrow position*/
+.arrow {
+  margin-top: 100px;
+}
+
+/*change arrow color and size*/
+.fa-chevron-down {
+  color: white;
+  font-size: 2em;
+}
+
+/*========================================================
+               Main Section
+========================================================*/
+/*Change text position */
+#main {
+  text-align: center;
+  padding: 50px;
+}
+
+/*change header size and color*/
+h3 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #2d3950;
+}
+
+/*change text position*/
+#main p {
+  line-height: 32px;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 74%;
+  color: #999999;
+}
+
+
+/*========================================================
+               Features Section
+========================================================*/
+
+/*background of features section*/
+.features {
+  background-color: white;
+  text-align: center;
+}
+
+/*Place features in three columns*/
+.featureboxes {
+  display: inline-block;
+  font-weight: 400;
+  margin: 5% 1%;
+  padding: 10px;
+  width: 21%;
+}
+
+/*create a box and a gradient background for the icons*/
+.iconbox {
+  /*for browsers that do not support gradients*/
+  background-color: #1e5799;
+  /*Standard syntax */
+  background: linear-gradient(to right, #1e5799,#7db9e8 );
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
+}
+
+/*center icons in the box*/
+.features i {
+  display: block;
+  padding-top: 25px;
+}
+
+/*Change color and icon size*/
+.fa-mobile, .fa-paper-plane-o, .fa-bullhorn {
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+/*change font size of header */
+.features h4 {
+  font-size: 22px;
+}
+
+/*========================================================
+               Showcase Section
+========================================================*/
+.showcase {
+  clear: both;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.showcase h3 {
+  font-size: 41px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.showcase p{
+  padding-top: 0;
+  line-height: 23px;
+  color: #999999;
+
+}
+
+.photos {
+  text-align: center;
+}
+
+/*pictures*/
+ .boxes {
+  display: inline-block;
+  margin: 2% 1% 0%;
+  padding: 10px;
+  width: 25%;
+}
+
+.boxes img{
+  height: 100%;
+  width: 100%;
+}
+
+/*========================================================
+               Subscribe Section
+========================================================*/
+
+.subscribe {
+  clear: both;
+  text-align: center;
+  background: url(../img/bg2.png) no-repeat center center;
+  padding: 100px;
+}
+
+.content {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.subscribe h3 {
+  color: white;
+  font-size: 41px;
+}
+
+.subscribe p {
+  margin: 0 auto;
+  line-height: 23px;
+  font-weight: 400;
+  color: #999999;
+
+}
+
+.name,.email, .message {
+  display: block;
+  background-color: transparent;
+  border: 1px solid #f6f9f9;
+  border-radius: 2px;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px auto;
+  width: 30%;
+}
+
+.subscribe span {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.send {
+  background: transparent;
+  color: white;
+  border: 1px solid #15a4fa;
+  border-radius: 2px;
+  padding: 10px 25px;
+  margin: 25px 0 0 50px;
+  cursor: pointer;
+}
+
+/*========================================================
+               Footer Section
+========================================================*/
+
+.footer {
+    padding: 10px 10px 10px 50px;
+    height: 50px;
+}
+
+.copyright {
+  margin-top: 10px;
+  font-size: 16px;,
+  color: #000;
+  float: left;
+}
+
+.social-media {
+  display: inline;
+  float: right;
+  margin: 10px 75px 0 0;
+}
+
+.social-media button {
+  background-color: #15a4fa;
+  width: 30px;
+  height: 35px;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.social-media a {
+  text-align: center;
+  padding: 7px 5px;
+}
+
+/*.social-media a:first-child{
+  padding: 7px 9px;
+}*/
+
+.footer .fa {
+  color: white;
+  text-align: center;
+  font-size: inherit;
+}
+
+/*========================================================
+               Meta View Port Section
+========================================================*/
+
+@media(max-width:600px){
+  .logo {
+    margin: 25px 10px;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  /*Main****************/
+    #main {
+      padding: 50px 0;
+    }
+
+  .maininfo {
+    height: 550px;
+    background-position: center;
+    width: auto;
+  }
+
+  .maininfo h1 {
+    font-size: 70px;
+    padding-top: 90px;
+  }
+
+  .maininfo h2 {
+    font-size: 14px;
+    line-height: 27px;
+    padding: 0 10% 10px;
+  }
+
+  /*Features***************** */
+  .featureboxes {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  .iconbox {
+    width: 80px;
+    height: 80px;
+  }
+
+  .features h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+
+  /*showcase*******************/
+  h3, .showcase h3, .subscribe h3 {
+    font-size: 25px;
+  }
+
+  .boxes {
+    padding: 0;
+  }
+
+/*subscribe*****************/
+  .subscribe {
+    padding: 10% 0;
+  }
+
+  .subscribe h3 {
+    margin-top: 0;
+  }
+
+  .subscribe span {
+    font-size: 12px;
+  }
+
+  .name, .email, .message {
+    width: 80%;
+    font-size: 12px;
+    padding: 3px 5px;
+  }
+
+  .footer {
+    padding-left: 0;
+  }
+
+  .footer .copyright {
+    margin-left: 3%;
+    font-size: 12px;
+  }
+
+  .social-media {
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .social-media a {
+    font-size: 12px;
+    padding: 7px 1px;
+  }
+
+  .social-media button {
+    width: 20px;
+    height: 25px;
+  }
+
+
+}
